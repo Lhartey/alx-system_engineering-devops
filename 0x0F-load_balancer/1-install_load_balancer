@@ -16,8 +16,8 @@ frontend  yonas-frontend
         default_backend yonas-backend
 backend yonas-backend
         balance roundrobin
-        server 63210-web-01 100.25.19.204:80 check
-        server 63210-web-02 54.157.159.85:80 check
+        server 165721-web-01 18.207.233.148:80 check
+        server 165721-web-02 54.237.21.109:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
